@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+html {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
