@@ -24,24 +24,24 @@ export default function CardDetailForm() {
           />
         </fieldset>
 
-        <div className="flex flex-row">
+        <div className="flex flex-1 flex-row">
           <fieldset className="flex flex-col gap-y-1 w-1/2">
             <label htmlFor="">EXP. DATE (MM/YY)</label>
             <div className="flex flex-row">
               <input
-                className="flex-1 placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded border-light-grayish-violet p-3"
+                className=" placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded border-light-grayish-violet p-3"
                 placeholder="MM"
                 type="text"
               />
               <input
-                className="flex-1 placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded border-light-grayish-violet p-3"
+                className=" placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded border-light-grayish-violet p-3"
                 placeholder="YY"
                 type="text" 
               />
             </div>
           </fieldset>
 
-          <fieldset className="flex flex-col gap-y-1 w-1/2">
+          <fieldset className="flex flex-1 flex-col gap-y-1 w-1/2">
             <label htmlFor="">CVC</label>
             <input
               className="placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded border-light-grayish-violet p-3"
