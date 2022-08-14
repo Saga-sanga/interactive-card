@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function CardDetailForm() {
+export default function CardDetailForm({onSubmitButton}) {
   return (
     <section className="flex-[2_1_66.666667%] flex justify-center items-center">
-      <form className="flex flex-col gap-y-4 w-2/5 font-semibold ml-60">
+      <form className="flex flex-col gap-y-4 w-2/5 font-semibold ml-40">
         <fieldset className="flex flex-col gap-y-1">
           <label htmlFor="holderName" className="text-xs">CARDHOLDER NAME</label>
           <input 
@@ -53,6 +53,7 @@ export default function CardDetailForm() {
         <button 
           type="submit"
           className="bg-very-dark-violet text-white rounded-lg py-3 mt-4"
+          onClick={onSubmitButton}
         >Confirm</button>
       </form>
     </section>
