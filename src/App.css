@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  --gradient: linear-gradient(to right,#6448FE, #600594);
+}
+
 html {
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.10em;
@@ -13,12 +18,12 @@ label {
   background-image: url(./images/bg-main-desktop.png);
 }
 
-.test {
-  border: double 5px transparent;
-  background-image: linear-gradient(white, white), linear-gradient(to right,#6448FE, #600594);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+.active-border:active, .active-border:focus {
+  background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+  border: 1px solid transparent;
 }
+
+
 
 /* .month-year > * {
   flex: 1 1 50px;

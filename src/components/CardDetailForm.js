@@ -12,7 +12,7 @@ export default function CardDetailForm({onSubmitButton}) {
               placeholder:font-medium 
               text-sm border border-solid rounded-lg 
               border-light-grayish-violet px-3 py-2
-              active:outline" 
+              outline-none active-border" 
             id="holderName" 
             placeholder="e.g. Jane Appleseed"
             type="text" 
@@ -22,7 +22,11 @@ export default function CardDetailForm({onSubmitButton}) {
         <fieldset className="flex flex-col gap-y-1">
           <label htmlFor="cardNo" className="text-xs">CARD NUMBER</label>
           <input 
-            className="placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded-lg border-light-grayish-violet px-3 py-2" 
+            className="
+              placeholder:text-light-grayish-violet 
+              placeholder:font-medium text-sm border 
+              border-solid rounded-lg border-light-grayish-violet 
+              px-3 py-2 outline-none active-border" 
             id="cardNo" 
             placeholder="e.g. 1234 5678 9123 0000"
             type="text" 
@@ -34,12 +38,20 @@ export default function CardDetailForm({onSubmitButton}) {
             <label className="text-xs" htmlFor="">EXP. DATE (MM/YY)</label>
             <div className="flex flex-row gap-x-2">
               <input
-                className="w-2/5 flex-1 placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded-lg border-light-grayish-violet px-3 py-2"
+                className="
+                  w-2/5 flex-1 placeholder:text-light-grayish-violet 
+                  placeholder:font-medium text-sm border border-solid 
+                  rounded-lg border-light-grayish-violet px-3 py-2
+                  outline-none active-border"
                 placeholder="MM"
                 type="text"
               />
               <input
-                className="w-2/5 flex-1 placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded-lg border-light-grayish-violet px-3 py-2"
+                className="
+                  w-2/5 flex-1 placeholder:text-light-grayish-violet 
+                  placeholder:font-medium text-sm border border-solid 
+                  rounded-lg border-light-grayish-violet px-3 py-2
+                  outline-none active-border"
                 placeholder="YY"
                 type="text" 
               />
@@ -49,7 +61,11 @@ export default function CardDetailForm({onSubmitButton}) {
           <fieldset className="flex flex-col gap-y-1 w-1/2">
             <label className="text-xs" htmlFor="">CVC</label>
             <input
-              className="w-full placeholder:text-light-grayish-violet placeholder:font-medium text-sm border border-solid rounded-lg border-light-grayish-violet px-3 py-2"
+              className="
+                w-full placeholder:text-light-grayish-violet 
+                placeholder:font-medium text-sm border border-solid 
+                rounded-lg border-light-grayish-violet px-3 py-2
+                outline-none active-border"
               type="text" 
               placeholder="e.g. 123"
             />
