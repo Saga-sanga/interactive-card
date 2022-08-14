@@ -10,7 +10,7 @@ export default function CardDetailForm({onSubmitButton}) {
             className="
               placeholder:text-light-grayish-violet 
               placeholder:font-medium 
-              text-sm border border-solid rounded-lg 
+              border border-solid rounded-lg 
               border-light-grayish-violet px-3 py-2
               outline-none active-border" 
             id="holderName" 
@@ -24,7 +24,7 @@ export default function CardDetailForm({onSubmitButton}) {
           <input 
             className="
               placeholder:text-light-grayish-violet 
-              placeholder:font-medium text-sm border 
+              placeholder:font-medium border 
               border-solid rounded-lg border-light-grayish-violet 
               px-3 py-2 outline-none active-border" 
             id="cardNo" 
@@ -40,7 +40,7 @@ export default function CardDetailForm({onSubmitButton}) {
               <input
                 className="
                   w-2/5 flex-1 placeholder:text-light-grayish-violet 
-                  placeholder:font-medium text-sm border border-solid 
+                  placeholder:font-medium border border-solid 
                   rounded-lg border-light-grayish-violet px-3 py-2
                   outline-none active-border"
                 placeholder="MM"
@@ -49,7 +49,7 @@ export default function CardDetailForm({onSubmitButton}) {
               <input
                 className="
                   w-2/5 flex-1 placeholder:text-light-grayish-violet 
-                  placeholder:font-medium text-sm border border-solid 
+                  placeholder:font-medium border border-solid 
                   rounded-lg border-light-grayish-violet px-3 py-2
                   outline-none active-border"
                 placeholder="YY"
@@ -63,7 +63,7 @@ export default function CardDetailForm({onSubmitButton}) {
             <input
               className="
                 w-full placeholder:text-light-grayish-violet 
-                placeholder:font-medium text-sm border border-solid 
+                placeholder:font-medium border border-solid 
                 rounded-lg border-light-grayish-violet px-3 py-2
                 outline-none active-border"
               type="text" 
@@ -73,7 +73,7 @@ export default function CardDetailForm({onSubmitButton}) {
         </div>
         <button 
           type="submit"
-          className="bg-very-dark-violet text-white rounded-lg py-3 mt-4"
+          className="bg-very-dark-violet hover:bg-violet-900 text-white rounded-lg py-3 mt-4"
           onClick={onSubmitButton}
         >Confirm</button>
       </form>

@@ -9,7 +9,7 @@ export default function CompleteState() {
         <span className='text-dark-grayish-violet tracking-wide'>We've added your card details</span>
         <button 
             type="submit"
-            className="bg-very-dark-violet text-white rounded-lg py-3 mt-6 w-full"
+            className="bg-very-dark-violet hover:bg-violet-900 text-white rounded-lg py-3 mt-6 w-full"
         >Continue</button>
       </div>   
     </section>
