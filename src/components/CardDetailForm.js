@@ -2,8 +2,8 @@ import React from "react";
 
 export default function CardDetailForm() {
   return (
-    <section className="basis-2/3 flex justify-center items-center">
-      <form className="flex flex-col gap-y-4 w-2/5 font-semibold">
+    <section className="flex-[2_1_66.666667%] flex justify-center items-center">
+      <form className="flex flex-col gap-y-4 w-2/5 font-semibold ml-60">
         <fieldset className="flex flex-col gap-y-1">
           <label htmlFor="holderName" className="text-xs">CARDHOLDER NAME</label>
           <input 
