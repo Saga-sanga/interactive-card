@@ -1,6 +1,6 @@
 import completeIcon from '../images/icon-complete.svg';
 
-export default function CompleteState() {
+export default function CompleteForm() {
   return (
     <section className="flex-[2_1_66.666667%] flex flex-col justify-center items-center">
       <div className="flex flex-col gap-y-4 w-2/5 font-semibold ml-40 text-center">
