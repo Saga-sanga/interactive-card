@@ -8,10 +8,10 @@ import CompleteForm from './components/CompleteForm';
 function App() {
   const [submit, setSubmit] = useState(false);
   const [userName, setUserName] = useState("Jane Appleseed");
-  const [cardNo, setCardNo] = useState("0000000000000000");
+  const [cardNo, setCardNo] = useState("0000 0000 0000 0000");
   const [cardMonth, setCardMonth] = useState("00");
   const [cardYear, setCardYear] = useState("00");
-  const [cardCVC, setCVC] = useState("000")
+  const [cardCVC, setCVC] = useState("000");
 
   const onSubmitButton = () => {
     setSubmit(true);

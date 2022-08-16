@@ -10,7 +10,7 @@ export default function CardGraphics({userName, cardNo, cardMonth, cardYear, car
       
       <div className="relative left-1/3">
         <img className="absolute left-7 top-6 w-2/12" src={cardLogo} alt="Two white spheres" />
-        <span className="absolute z-10 left-7 bottom-1/4 text-white text-[28px] tracking-widest">0000 0000 0000 0000</span>
+        <span className="absolute z-10 left-7 bottom-1/4 text-white text-[28px] tracking-widest">{cardNo}</span>
         <div className="flex flex-row w-full justify-between absolute pl-7 pr-14 bottom-4 text-[14px] text-white">        
             <span className="uppercase">{userName}</span>
             <span>{cardMonth}/{cardYear}</span>
