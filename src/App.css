@@ -18,6 +18,10 @@ label {
   background-image: url(./images/bg-main-desktop.png);
 }
 
+.red-error-border {
+  border-color: hsl(0, 100%, 66%) !important;
+}
+
 .active-border:active, .active-border:focus {
   background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
   border: 1px solid transparent;
