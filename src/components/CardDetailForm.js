@@ -19,6 +19,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
       form.name.classList.add('red-error-border');
       errorSpan[0].classList.remove('hidden');
       errorSpan[0].innerHTML = "Can't be blank";
+      return false;
     } else {
       form.name.classList.remove('red-error-border');
       errorSpan[0].classList.add('hidden');
@@ -30,32 +31,39 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
       form.card.classList.add('red-error-border');
       errorSpan[1].classList.remove('hidden');
       errorSpan[1].innerHTML = "Wrong format, numbers only";
+      return false;
     } else if (form.card.value === '') {
       errorSpan[1].innerHTML = "Can't be blank";
       form.card.classList.add('red-error-border');
       errorSpan[1].classList.remove('hidden');
+      return false;
     } else {
       form.card.classList.remove('red-error-border');
       errorSpan[1].classList.add('hidden');
     }
 
     //Card Expiry Month error validation
-    if (form.month.value === "") {
+    if (form.month.value === "" || (/[a-z]/ig.test(form.month.value) === true)) {
       form.month.classList.add('red-error-border');
     } else {
       form.month.classList.remove('red-error-border');
     }
 
     //Card Expiry Year error validation
-    if (form.year.value === "") {
+    if (form.year.value === "" || (/[a-z]/ig.test(form.year.value) === true)) {
       form.year.classList.add('red-error-border');
     } else {
       form.year.classList.remove('red-error-border');
     }
 
-    if (form.month.value === "" || form.year.value === "") {
+    if ((/[a-z]/ig.test(form.month.value) === true) || (/[a-z]/ig.test(form.year.value) === true)) {
       errorSpan[2].classList.remove('hidden');
+      errorSpan[2].innerHTML = "Wrong format, numbers only";
+      return false;
+    } else if (form.month.value === "" || form.year.value === "") {
       errorSpan[2].innerHTML = "Can't be blank";
+      errorSpan[2].classList.remove('hidden');
+      return false;
     } else {
       errorSpan[2].classList.add('hidden');
     }
@@ -65,11 +73,18 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
       form.cvc.classList.add('red-error-border');
       errorSpan[3].classList.remove('hidden');
       errorSpan[3].innerHTML = "Can't be blank";
+      return false;
+    } else if ((/[a-z]/ig.test(form.cvc.value) === true)) {
+      form.cvc.classList.add('red-error-border');
+      errorSpan[3].classList.remove('hidden');
+      errorSpan[3].innerHTML = "Wrong format, numbers only";
+      return false;
     } else {
       form.cvc.classList.remove('red-error-border');
       errorSpan[3].classList.add('hidden');
     }
 
+    onSubmitButton();
   }
   
   return (
