@@ -1,14 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Cleave from "cleave.js/react";
 
 export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, setCardMonth, setCardYear, setCVC}) {
   // const [errorMessage, setErrorMessage] = useState("Can't be blank");
   let errorMessage = "Can't be blank";
   const form = document.forms[0];
-  
-  // const validateInput = (e) => (/[a-z]/ig.test(e.target.value) === true) || (e.target.value === '')? 
-  //   e.currentTarget.classList.add('red-error-border'):
-  //   e.currentTarget.classList.remove('red-error-border');
 
   const checkError = (e) => {
     e.preventDefault();
