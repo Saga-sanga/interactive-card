@@ -86,7 +86,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
   return (
     <section className="flex-[2_1_66.666667%] flex justify-center items-center">
       <form 
-        className="flex flex-col gap-y-4 w-2/5 font-semibold ml-40"
+        className="flex flex-col gap-y-4 w-2/5 font-semibold md:ml-40 md:p-0 p-6"
         onSubmit={checkError}
       >
         <fieldset className="flex flex-col gap-y-1">
