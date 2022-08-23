@@ -14,10 +14,18 @@ label {
   font-size: 12px;
 }
 
-.desktop-bg {
-  background-image: url(./images/bg-main-desktop.png);
+
+.card-bg {
+  background-image: url(./images/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+@media (min-width: 768px) {
+  .card-bg {
+    background-image: url(./images/bg-main-desktop.png);
+  }
+}
 .red-error-border {
   border-color: hsl(0, 100%, 66%) !important;
 }

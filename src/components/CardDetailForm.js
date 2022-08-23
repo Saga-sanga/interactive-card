@@ -3,7 +3,7 @@ import Cleave from "cleave.js/react";
 
 export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, setCardMonth, setCardYear, setCVC}) {
   // const [errorMessage, setErrorMessage] = useState("Can't be blank");
-  let errorMessage = "Can't be blank";
+  // let errorMessage = "Can't be blank";
   const form = document.forms[0];
 
   const checkError = (e) => {
@@ -86,7 +86,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
   return (
     <section className="flex-[2_1_66.666667%] flex justify-center items-center">
       <form 
-        className="flex flex-col gap-y-4 w-2/5 font-semibold md:ml-40 md:p-0 p-6"
+        className="flex flex-col gap-y-4 w-full md:w-2/5 font-semibold md:ml-40 md:p-0 p-6"
         onSubmit={checkError}
       >
         <fieldset className="flex flex-col gap-y-1">
@@ -160,10 +160,10 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
                 maxLength={2} 
               />
             </div>
-            <span className="text-[12px] text-red-error tracking-normal hidden">{errorMessage}</span>
+            <span className="text-[12px] text-red-error tracking-normal hidden"></span>
           </fieldset>
 
-          <fieldset className="flex flex-col gap-y-1 w-1/2">
+          <fieldset className="flex flex-col gap-y-1 justify-end w-1/2">
             <label className="text-xs" htmlFor="">CVC</label>
             <input
               onChange={e => setCVC(e.target.value)}
@@ -177,7 +177,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
               name="cvc"
               maxLength={3}
             />
-            <span className="text-[12px] text-red-error tracking-normal hidden">{errorMessage}</span>
+            <span className="text-[12px] text-red-error tracking-normal hidden"></span>
           </fieldset>
         </div>
         <button 
