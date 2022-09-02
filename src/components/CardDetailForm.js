@@ -155,7 +155,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
                   rounded-lg border-light-grayish-violet px-3 py-2
                   outline-none active-border"
                 placeholder="YY"
-                type="text"
+                type="tel"
                 name="year"
                 maxLength={2} 
               />
@@ -172,7 +172,7 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
                 placeholder:font-medium border border-solid 
                 rounded-lg border-light-grayish-violet px-3 py-2
                 outline-none active-border"
-              type="text" 
+              type="tel" 
               placeholder="e.g. 123"
               name="cvc"
               maxLength={3}
