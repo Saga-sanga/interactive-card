@@ -4,6 +4,10 @@
   --gradient: linear-gradient(to right,#6448FE, #600594);
 }
 
+/* * {
+  background: rgb(0 100 0 / 0.2) !important;
+} */
+
 html {
   font-family: 'Space Grotesk', sans-serif;
   letter-spacing: 0.10em;
@@ -19,6 +23,35 @@ label {
   background-image: url(./images/bg-main-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 240px;
+}
+
+@media (max-width: 425px) {
+  .card-front {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    right: 20%;
+  }
+
+  .card-no {
+    font-size: 1rem;
+  }
+
+  .card-info {
+    font-size: 0.55rem;
+  }
+
+  .card-back {
+    position: absolute;
+    left: 20%;
+    right: 5%;
+  }
+
+  .card-back > span {
+    font-size: 0.55em;
+    right: 12%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -26,6 +59,7 @@ label {
     background-image: url(./images/bg-main-desktop.png);
   }
 }
+
 .red-error-border {
   border-color: hsl(0, 100%, 66%) !important;
 }
