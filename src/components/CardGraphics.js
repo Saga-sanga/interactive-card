@@ -15,12 +15,12 @@ export default function CardGraphics({userName, cardNo, cardMonth, cardYear, car
             <span className="uppercase">{userName}</span>
             <span>{cardMonth}/{cardYear}</span>
         </div>
-        <img  src={cardFront} alt="Violet Credit Card Front" height={'100%'}/>
+        <img  src={cardFront} alt="Violet Credit Card Front"/>
       </div>
 
       <div className="relative left-1/2 card-back">
         <span className="text-white text-[14px] absolute z-10 top-[45%] right-[20%]">{cardCVC}</span>
-        <img  src={cardBack} alt="Gray Credit Card Back" height={'100%'}/>
+        <img  src={cardBack} alt="Gray Credit Card Back"/>
       </div>
     </div>
   )

@@ -132,8 +132,8 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
 
         <div className="flex flex-row gap-x-4">
           <fieldset className="flex flex-col gap-y-1 w-1/2">
-            <label className="text-xs" htmlFor="monthDate">EXP. DATE (MM/YY)</label>
-            <div className="flex flex-row gap-x-2" id="monthDate">
+            <label className="text-xs">EXP. DATE (MM/YY)</label>
+            <div className="flex flex-row gap-x-2">
               <input
                 onChange={e => setCardMonth(e.target.value)}
                 className="
@@ -164,8 +164,9 @@ export default function CardDetailForm({onSubmitButton, setUserName, setCardNo, 
           </fieldset>
 
           <fieldset className="flex flex-col gap-y-1 w-1/2">
-            <label className="text-xs" htmlFor="">CVC</label>
+            <label className="text-xs" htmlFor="cvc">CVC</label>
             <input
+              id="cvc"
               onChange={e => setCVC(e.target.value)}
               className="
                 w-full placeholder:text-light-grayish-violet 
