@@ -6,7 +6,7 @@ import cardLogo from '../images/card-logo.svg'
 
 export default function CardGraphics({userName, cardNo, cardMonth, cardYear, cardCVC}) {
   return(
-    <div className="h-screen md:basis-1/3 card-bg flex flex-col justify-center gap-y-9">
+    <div className="md:h-screen md:basis-1/3 card-bg flex flex-col justify-center gap-y-9">
       
       <div className="relative z-20 left-1/3 card-front">
         <img className="absolute left-4 top-4 sm:left-7 sm:top-6 w-2/12" src={cardLogo} alt="Two white spheres" />

@@ -26,7 +26,7 @@ label {
   min-height: 240px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .card-front {
     position: absolute;
     left: 5%;
@@ -51,6 +51,12 @@ label {
   .card-back > span {
     font-size: 0.55em;
     right: 12%;
+  }
+}
+
+@media (max-width: 321px) {
+  .card-no {
+    font-size: 0.85rem;
   }
 }
 
